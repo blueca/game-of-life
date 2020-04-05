@@ -26,7 +26,7 @@ class Game extends React.Component {
     const { cells } = this.state;
 
     return (
-      <div>
+      <div id="game">
         <Controls
           isRunning={this.state.isRunning}
           stopGame={this.stopGame}
@@ -57,8 +57,10 @@ class Game extends React.Component {
             />
           ))}
         </div>
-        <p>Generation: {this.state.generation}</p>
-        <p>Population: {this.state.cells.length}</p>
+        <div className="counters">
+          <p className="counter">Generation: {this.state.generation}</p>
+          <p className="counter">Population: {this.state.cells.length}</p>
+        </div>
       </div>
     );
   }

@@ -1,5 +1,110 @@
+body {
+  background-color: #28353d;
+  color: #121924;
+}
+
 .App {
   text-align: center;
+  background-color: #5699a3;
+}
+
+header {
+  background-color: #28353d;
+  color: #f8f6f1;
+}
+
+#game {
+  padding-bottom: 10px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f6f1;
+  margin: auto;
+  width: 1000px;
+  border-radius: 10px 10px 0 0;
+}
+
+button {
+  background-color: #171f27;
+  color: #f8f6f1;
+  border: solid 1px #121924;
+  margin: 10px 0 10px 20px;
+  width: 80px;
+  height: 2.5em;
+  border-radius: 3px;
+  outline: none;
+}
+
+button:hover {
+  background-color: #28353d;
+  cursor: pointer;
+}
+button:active {
+  position: relative;
+  top: 1px;
+}
+
+#patternMod {
+  display: flex;
+  align-items: center;
+}
+
+#randomDensity {
+  -webkit-appearance: none;
+  margin: 10px 0 10px 10px;
+  width: 200px;
+  height: 10px;
+  border-radius: 5px;
+  background: #5699a3;
+  outline: none;
+  opacity: 1;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+#randomDensity:hover {
+  opacity: 0.8;
+}
+
+#randomDensity::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #121924;
+  cursor: pointer;
+}
+
+#randomDensity::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #121924;
+  cursor: pointer;
+}
+
+select {
+  margin: 0 20px;
+  background-color: #171f27;
+  color: #f8f6f1;
+  border: solid 1px #121924;
+  width: 180px;
+  height: 2.5em;
+  border-radius: 3px;
+}
+
+select:hover {
+  background-color: #28353d;
+  cursor: pointer;
+}
+
+option {
+  background-color: #171f27;
+  color: #f8f6f1;
 }
 
 .Board {
@@ -13,4 +118,14 @@
 .Cell {
   background: #ccc;
   position: absolute;
+}
+
+.counters {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f8f6f1;
+  margin: auto;
+  width: 1000px;
+  border-radius: 0 0 10px 10px;
 }
